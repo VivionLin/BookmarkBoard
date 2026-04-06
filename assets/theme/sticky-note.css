@@ -1,0 +1,77 @@
+/* =========================================
+   Sticky Note Theme (.sticky-note-theme)
+   ========================================= */
+
+body.sticky-note-theme {
+    color: #1e293b;
+    font-family: "Kalam", "Comic Neue", sans-serif;
+}
+
+body.sticky-note-theme header {
+    border-bottom: 4px solid #e2e8f0;
+}
+
+body.sticky-note-theme .tab-button {
+    color: #64748b;
+    font-weight: bold;
+}
+
+body.sticky-note-theme .tab-button.active {
+    color: #0f172a;
+    border-bottom: 4px solid #0f172a;
+}
+
+/* Folder Groups - Whiteboard drawn boxes */
+body.sticky-note-theme .folder-group {
+    background-color: transparent;
+    border: 3px solid #cbd5e1; /* Marker line */
+    border-radius: 4px;
+}
+
+body.sticky-note-theme .folder-title {
+    color: #334155;
+    border-bottom: 3px solid #cbd5e1;
+    font-size: 1.5em;
+}
+
+
+
+/* =========================================
+   Bookmark Cards - Washi-Taped Clippings
+   ========================================= */
+body.sticky-note-theme .card {
+    /* background-color: #ffffff; */
+    background-color: rgba(var(--icon-color), 0.2);
+    border: none;
+    border-radius: 2px;
+    padding: 15px 15px 20px 15px; /* Polaroid proportion */
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.06);
+    position: relative;
+    transition: all 0.2s ease;
+    color: #1e293b; /* Keep text dark and readable */
+}
+
+/* Give the cards an organic, scattered look */
+body.sticky-note-theme .card:nth-child(odd) { transform: rotate(1.5deg); }
+body.sticky-note-theme .card:nth-child(even) { transform: rotate(-1.5deg); }
+body.sticky-note-theme .card:nth-child(3n) { transform: rotate(0.5deg); }
+
+/* Hover effect: The card straightens out and lifts up */
+body.sticky-note-theme .card:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 4px 8px 20px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+body.sticky-note-theme .card::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 18px;
+    height: 16px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    background-color: rgb(255 255 255 / 10%);
+}

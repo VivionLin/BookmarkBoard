@@ -1,0 +1,164 @@
+/* =========================================
+   Black Theme (.blackboard-theme)
+   ========================================= */
+
+body.blackboard-theme {
+    /* Dark charcoal/chalkboard background */
+    background-color: #1a1a1a; 
+    color: #e0e0e0; /* Off-white chalk/pencil color */
+    /* Handwriting font stack */
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive, sans-serif; 
+}
+
+body.blackboard-theme header {
+    background-color: transparent;
+    border-bottom: 3px solid #e0e0e0;
+    /* Irregular border radius to mimic a drawn line */
+    border-radius: 2px 255px 3px 45px / 255px 5px 225px 3px;
+    position: unset;
+}
+
+/* Theme Selector */
+body.blackboard-theme .theme-selector-wrapper,
+body.blackboard-theme #overflow-btn {
+    background-color: #2a2a2a;
+    border: 2px solid #e0e0e0;
+    /* Hand-drawn box effect */
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; 
+    color: #e0e0e0;
+    /* Hard, black shadow for contrast */
+    box-shadow: 3px 3px 0px rgba(0,0,0,1); 
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+body.blackboard-theme .theme-selector-wrapper:hover {
+    background-color: #333;
+    box-shadow: 5px 5px 0px rgba(0,0,0,1);
+    border-color: #fff;
+}
+
+/* Dropdown Menu */
+body.blackboard-theme .theme-options-container,
+body.blackboard-theme .overflow-options-container {
+    background: #2a2a2a;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    box-shadow: 5px 5px 0px rgba(0,0,0,1);
+}
+
+body.blackboard-theme .theme-option,
+body.blackboard-theme .overflow-item {
+    color: #e0e0e0;
+    border-bottom: 1px dashed #555;
+}
+body.blackboard-theme .theme-option:last-child,
+body.blackboard-theme .overflow-item:last-child {
+    border-bottom: none;
+}
+
+body.blackboard-theme .theme-option:hover,
+body.blackboard-theme .overflow-item:hover {
+    background: #3a3a3a;
+    color: #fff;
+}
+
+body.blackboard-theme .theme-option.selected {
+    background: #444;
+    font-weight: bold;
+    text-decoration: underline wavy #e0e0e0;
+}
+
+/* Tabs */
+body.blackboard-theme .tab-button {
+    color: #888;
+    font-family: inherit;
+    border-bottom: 3px solid transparent;
+    text-transform: lowercase;
+}
+
+body.blackboard-theme .tab-button:hover {
+    color: #ccc;
+}
+
+body.blackboard-theme .tab-button.active {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 3px solid #e0e0e0;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Folder Groups */
+body.blackboard-theme .folder-group {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 2px solid #e0e0e0;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+}
+
+body.blackboard-theme .folder-title {
+    color: #e0e0e0;
+    border-bottom: 2px dashed #777;
+    font-weight: bold;
+}
+
+body.blackboard-theme .folder-title::after {
+    color: #e0e0e0;
+}
+
+/* Bookmark Cards */
+body.blackboard-theme .card {
+    background-color: #2a2a2a;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    box-shadow: 3px 3px 0px rgba(0,0,0,1);
+    color: #e0e0e0;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+/* Make odd cards slant slightly differently */
+body.blackboard-theme .card:nth-child(odd) {
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+body.blackboard-theme .card:hover {
+    transform: translateY(-2px) rotate(-1.5deg); 
+    box-shadow: 5px 5px 0px rgba(0,0,0,1);
+    background-color: #333;
+}
+
+/* Context Menu & Drag Drop */
+body.blackboard-theme .context-menu {
+    background: #2a2a2a;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    box-shadow: 4px 4px 0px rgba(0,0,0,1);
+    font-family: inherit;
+}
+body.blackboard-theme .cm-item { color: #e0e0e0; }
+body.blackboard-theme .cm-item:hover { background: #444; color: #fff; }
+body.blackboard-theme .cm-item.cm-danger {
+    color: #ff6b6b;
+    border-top: 2px dashed #555;
+}
+body.blackboard-theme .folder-items.drag-over, 
+body.blackboard-theme .tab-panel.drag-over {
+    background-color: rgba(255,255,255,0.05);
+    border: 2px dashed #e0e0e0;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+body.blackboard-theme .drag-indicator {
+    background-color: #e0e0e0;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    width: 6px;
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+}
+body.blackboard-theme #search-input {
+    border: 2px solid #e0e0e0;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 3px 3px 0px rgba(0,0,0,1);
+}
+body.blackboard-theme #search-input:focus {
+    border-color: #fff;
+    box-shadow: 5px 5px 0px rgba(0,0,0,1);
+    transform: translate(-2px, -2px);
+}

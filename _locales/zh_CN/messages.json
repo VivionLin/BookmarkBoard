@@ -1,0 +1,59 @@
+{
+  "extension_name": { "message": "书签看板" },
+  "extension_description": { "message": "在高度可视化的拖拽式看板上查看和整理您的书签。" },
+
+  "search_placeholder": { "message": "搜索..." },
+  "search_active_msg": { "message": "搜索期间已禁用编辑与拖拽排序功能" },
+
+  "theme_material": { "message": "极简" },
+  "theme_commute_dark": { "message": "深岩" },
+  "theme_frosted_glass": { "message": "毛玻璃" },
+  "theme_neon": { "message": "动感霓虹" },
+  "theme_latex": { "message": "周刊" },
+  "theme_sticky_note": { "message": "便签" },
+  "theme_pop_art": { "message": "海报" },
+  "theme_cyberpunk": { "message": "赛博朋克" },
+  "theme_hacker": { "message": "黑客" },
+  "theme_blackboard": { "message": "黑板" },
+  "theme_bujo": { "message": "手帐" },
+
+  "overflow_btn_title": { "message": "反馈与支持" },
+  "overflow_rate_title": { "message": "推荐此扩展" },
+  "overflow_report_title": { "message": "报告 Bug" },
+
+  "cm_add_folder": { "message": "添加新文件夹" },
+  "cm_add_bookmark": { "message": "添加新书签" },
+  "cm_rename": { "message": "重命名" },
+  "cm_delete": { "message": "删除" },
+  "prompt_folder_name": { "message": "请输入新文件夹名称：" },
+  "prompt_bookmark_title": { "message": "请输入书签标题：" },
+  "prompt_bookmark_url": { "message": "请输入书签链接 (URL)：" },
+  "prompt_rename_folder": { "message": "输入新文件夹名称：" },
+  "prompt_rename_bookmark": { "message": "输入新书签名称：" },
+  "delete_confirm": {
+    "message": "您确定要删除“$TITLE$”吗？",
+    "placeholders": {
+      "title": { "content": "$1" }
+    }
+  },
+
+  "welcome_title": { "message": "欢迎使用书签看板" },
+  "welcome_subtitle": { "message": "将杂乱的书签栏转换成高度可视化、个性化的拖拽式看板。" },
+  "welcome_pin_title": { "message": "保持一键即可访问" },
+  "welcome_pin_instruction": { "message": "点击 <strong>🧩 扩展程序</strong> → 将<strong>书签看板</strong>固定" },
+  
+  "feat_drag_title": { "message": "可视化拖拽" },
+  "feat_drag_desc": { "message": "随心所欲地整理文件夹和书签，让它们以您想要的方式呈现在看板上。" },
+  
+  "feat_themes_title": { "message": "10+ 种主题" },
+  "feat_themes_desc": { "message": "瞬间改变您的看板风格。" },
+  
+  "feat_search_title": { "message": "极速搜索" },
+  "feat_search_desc": { "message": "瞬间找到难以寻找的书签，无须在层层文件夹中翻找。" },
+  
+  "feat_edits_title": { "message": "轻松编辑" },
+  "feat_edits_desc": { "message": "想要快速编辑？只需在面板上的任意位置<strong>右键单击</strong>即可创建文件夹、添加新书签、重命名或删除。" },
+  
+  "welcome_cta": { "message": "打开我的书签看板" },
+  "welcome_support": { "message": "喜欢这个扩展程序吗？" }
+}

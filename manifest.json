@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "default_locale": "en",
+  "name": "__MSG_extension_name__",
+  "version": "1.0.0",
+  "description": "__MSG_extension_description__",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "favicon"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/images/icon16.png",
+      "48": "assets/images/icon48.png",
+      "128": "assets/images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  }
+}

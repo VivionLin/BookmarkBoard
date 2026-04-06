@@ -1,0 +1,59 @@
+{
+  "extension_name": { "message": "書籤看板" },
+  "extension_description": { "message": "在高度視覺化的拖曳式看板上查看和整理您的書籤。" },
+
+  "search_placeholder": { "message": "搜尋..." },
+  "search_active_msg": { "message": "搜尋期間已停用編輯與拖曳排序功能" },
+
+  "theme_material": { "message": "極簡" },
+  "theme_commute_dark": { "message": "深岩" },
+  "theme_frosted_glass": { "message": "毛玻璃" },
+  "theme_neon": { "message": "動感霓虹" },
+  "theme_latex": { "message": "期刊" },
+  "theme_sticky_note": { "message": "便簽" },
+  "theme_pop_art": { "message": "海報" },
+  "theme_cyberpunk": { "message": "電馭叛客" },
+  "theme_hacker": { "message": "駭客" },
+  "theme_blackboard": { "message": "黑板" },
+  "theme_bujo": { "message": "手帳" },
+
+  "overflow_btn_title": { "message": "反馈与支持" },
+  "overflow_rate_title": { "message": "推荐此扩展" },
+  "overflow_report_title": { "message": "报告 Bug" },
+
+  "cm_add_folder": { "message": "新增資料夾" },
+  "cm_add_bookmark": { "message": "新增書籤" },
+  "cm_rename": { "message": "重新命名" },
+  "cm_delete": { "message": "刪除" },
+  "prompt_folder_name": { "message": "請輸入新資料夾名稱：" },
+  "prompt_bookmark_title": { "message": "請輸入書籤標題：" },
+  "prompt_bookmark_url": { "message": "請輸入書籤網址 (URL)：" },
+  "prompt_rename_folder": { "message": "輸入新資料夾名稱：" },
+  "prompt_rename_bookmark": { "message": "輸入新書籤名稱：" },
+  "delete_confirm": {
+    "message": "您確定要刪除「$TITLE$」嗎？",
+    "placeholders": {
+      "title": { "content": "$1" }
+    }
+  },
+
+  "welcome_title": { "message": "歡迎使用書籤看板" },
+  "welcome_subtitle": { "message": "將雜亂的書籤列轉換成高度視覺化、個人化的拖曳式看板。" },
+  "welcome_pin_title": { "message": "保持一鍵即可存取" },
+  "welcome_pin_instruction": { "message": "點擊 <strong>🧩 擴充功能</strong> → 將<strong>書籤看板</strong>釘選" },
+  
+  "feat_drag_title": { "message": "視覺化拖曳" },
+  "feat_drag_desc": { "message": "隨心所欲地整理資料夾和書籤，讓它們以您想要的方式呈現在看板上。" },
+  
+  "feat_themes_title": { "message": "10+ 種主題" },
+  "feat_themes_desc": { "message": "瞬間改變您的看板風格。" },
+  
+  "feat_search_title": { "message": "極速搜尋" },
+  "feat_search_desc": { "message": "瞬間找到難以尋找的書籤，無須在層層資料夾中翻找。" },
+  
+  "feat_edits_title": { "message": "輕鬆編輯" },
+  "feat_edits_desc": { "message": "想要快速編輯？只需在面板上的任意位置<strong>點擊右鍵</strong>即可建立資料夾、新增書籤、重新命名或刪除項目。" },
+  
+  "welcome_cta": { "message": "開啟我的書籤看板" },
+  "welcome_support": { "message": "喜歡這個擴充功能嗎？" }
+}

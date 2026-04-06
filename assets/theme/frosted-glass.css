@@ -1,0 +1,172 @@
+/* =========================================
+   Frosted Glass Theme (.frosted-glass-theme)
+   ========================================= */
+
+body.frosted-glass-theme {
+    /* Soft, ethereal background to show off the glass blur */
+    background-color: #f4f7f6;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(200, 230, 255, 0.6) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(255, 215, 235, 0.5) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(220, 255, 240, 0.6) 0%, transparent 50%);
+    background-attachment: fixed;
+    color: #4a5568; /* Soft dark grey for readability */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+}
+
+body.frosted-glass-theme header {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* Theme Selector */
+body.frosted-glass-theme .theme-selector-wrapper {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #4a5568;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+body.frosted-glass-theme .theme-selector-wrapper:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Dropdown Menu */
+body.frosted-glass-theme .theme-options-container,
+body.frosted-glass-theme .overflow-options-container {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
+}
+
+body.frosted-glass-theme .theme-option,
+body.frosted-glass-theme .overflow-item {
+    color: #4a5568;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+body.frosted-glass-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.frosted-glass-theme .theme-option:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #2b6cb0;
+}
+
+body.frosted-glass-theme .theme-option.selected {
+    background: rgba(255, 255, 255, 0.7);
+    color: #2b6cb0;
+    font-weight: 600;
+}
+
+/* Tabs */
+body.frosted-glass-theme .tab-button {
+    color: #718096;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 8px 8px 0 0;
+}
+
+body.frosted-glass-theme .tab-button:hover {
+    color: #2d3748;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+body.frosted-glass-theme .tab-button.active {
+    color: #2b6cb0;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-bottom: 3px solid #2b6cb0;
+}
+
+/* Folder Groups */
+body.frosted-glass-theme .folder-group {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+}
+
+body.frosted-glass-theme .folder-title {
+    color: #2d3748;
+    font-weight: 500;
+}
+body.frosted-glass-theme :not(.collapsed) > .folder-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+body.frosted-glass-theme .folder-title::after {
+    color: #a0aec0;
+}
+
+/* Bookmark Cards */
+body.frosted-glass-theme .card {
+    background-color: rgba(var(--icon-color), 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    color: #4a5568;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body.frosted-glass-theme .card-title {
+    font-weight: 500;
+}
+
+body.frosted-glass-theme .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px 0 rgba(31, 38, 135, 0.08);
+}
+
+/* Context Menu & Drag Drop */
+body.frosted-glass-theme .context-menu {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+}
+body.frosted-glass-theme .cm-item:not(.cm-danger) { color: #4a5568; }
+body.frosted-glass-theme .cm-item:not(.cm-danger):hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #2b6cb0;
+}
+body.frosted-glass-theme .cm-item.cm-danger { border-top: 1px solid rgba(0,0,0,0.05); }
+body.frosted-glass-theme .folder-items.drag-over, 
+body.frosted-glass-theme .tab-panel.drag-over {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px dashed rgba(43, 108, 176, 0.5);
+    border-radius: 12px;
+}
+body.frosted-glass-theme .drag-indicator {
+    background-color: rgba(43, 108, 176, 0.8); /* Match the active tab blue */
+    box-shadow: 0 0 8px rgba(43, 108, 176, 0.4);
+    border-radius: 4px;
+}
+body.frosted-glass-theme #search-input {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+body.frosted-glass-theme #search-input:focus {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}

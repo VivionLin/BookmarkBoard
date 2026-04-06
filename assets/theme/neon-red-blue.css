@@ -1,0 +1,173 @@
+/* =========================================
+   Red & Blue Neon Theme (.neon-red-blue-theme)
+   ========================================= */
+
+@keyframes neon-rb-aurora {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body.neon-red-blue-theme {
+    background-color: #05050a; /* Extremely dark blue/black base */
+    background-image: 
+        radial-gradient(circle at 15% 35%, rgba(255, 0, 60, 0.25) 0%, transparent 50%), /* Crimson red */
+        radial-gradient(circle at 75% 15%, rgba(0, 102, 255, 0.3) 0%, transparent 50%), /* Deep neon blue */
+        radial-gradient(circle at 80% 85%, rgba(255, 42, 42, 0.25) 0%, transparent 50%), /* Bright red */
+        linear-gradient(135deg, #0a0b14 0%, #05050a 100%);
+    
+    background-size: 200% 200%;
+    animation: neon-rb-aurora 30s ease infinite;
+    background-attachment: fixed;
+    color: #e0e0ff;
+    min-height: 100vh;
+}
+
+body.neon-red-blue-theme header {
+    background: rgba(5, 5, 10, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Theme Selector */
+body.neon-red-blue-theme .theme-selector-wrapper,
+body.neon-red-blue-theme #overflow-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 102, 255, 0.4);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 102, 255, 0.2);
+}
+
+body.neon-red-blue-theme .theme-selector-wrapper:hover {
+    border-color: #ff003c;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.4), inset 0 0 10px rgba(255, 0, 60, 0.2);
+    background: rgba(255, 0, 60, 0.1);
+}
+
+/* Dropdown Menu */
+body.neon-red-blue-theme .theme-options-container,
+body.neon-red-blue-theme .overflow-options-container {
+    background: rgba(5, 5, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 102, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+}
+
+body.neon-red-blue-theme .theme-option,
+body.neon-red-blue-theme .overflow-item { color: #aaa; }
+body.neon-red-blue-theme .theme-option:hover,
+body.neon-red-blue-theme .overflow-item:hover { background: rgba(0, 102, 255, 0.15); color: #fff; }
+body.neon-red-blue-theme .theme-option.selected {
+    background: rgba(255, 0, 60, 0.15);
+    color: #ff2a2a;
+    text-shadow: 0 0 5px #ff003c;
+}
+
+/* Tabs */
+body.neon-red-blue-theme #tabs-container {
+    gap: 10px;
+    padding: 5px;
+}
+body.neon-red-blue-theme .tab-button {
+    color: #7a829e;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+body.neon-red-blue-theme .tab-button:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes neon-rb-tab-border {
+    0% { background-position: 0% 0%, 0% 50%; }
+    100% { background-position: 0% 0%, 200% 50%; }
+}
+body.neon-red-blue-theme .tab-button.active {
+    color: #fff;
+    /* Red & Blue sweeping gradient border */
+    background: 
+        linear-gradient(rgba(10, 11, 20, 0.8), rgba(10, 11, 20, 0.8)) padding-box,
+        linear-gradient(90deg, #ff003c, #7a00ff, #0066ff, #7a00ff, #ff003c) border-box;
+    background-size: 100% 100%, 200% 100%;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.3), inset 0 0 8px rgba(0, 102, 255, 0.2);
+    animation: neon-rb-tab-border 4s linear infinite;
+}
+
+/* Folder Groups */
+body.neon-red-blue-theme .folder-group {
+    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+body.neon-red-blue-theme .folder-title {
+    color: #fff;
+}
+body.neon-red-blue-theme :not(.collapsed) > .folder-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+body.neon-red-blue-theme .folder-title::after { color: #888; }
+
+/* Bookmark Cards */
+body.neon-red-blue-theme .card {
+    border: 1px solid rgba(var(--icon-color), 0.4);
+    box-shadow: 0 0 10px rgba(var(--icon-color), 0.2);
+}
+
+@keyframes dynamic-border-sweep {
+    0% { background-position: 0% 0%, 0% 50%; }
+    100% { background-position: 0% 0%, 200% 50%; }
+}
+body.neon-red-blue-theme .card:hover {
+    background: 
+        linear-gradient(rgba(5, 5, 10, 0.95), rgba(5, 5, 10, 0.95)) padding-box,
+        linear-gradient(90deg, rgba(var(--icon-color), 1), white, rgba(var(--icon-color), 1)) border-box;
+    background-size: 100% 100%, 200% 100%;
+    animation: dynamic-border-sweep 2s linear infinite;
+    border: 2px solid transparent;
+    box-shadow: 0 0 20px rgba(var(--icon-color), 0.6), inset 0 0 10px rgba(var(--icon-color), 0.3);
+    transform: translateY(-3px);
+}
+
+/* Context Menu & Drag Drop */
+body.neon-red-blue-theme .context-menu {
+    background: rgba(5, 5, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 0, 60, 0.4);
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.2);
+}
+body.neon-red-blue-theme .cm-item { color: #aaa; }
+body.neon-red-blue-theme .cm-item:hover { background: rgba(255, 0, 60, 0.15); color: #fff; }
+body.neon-red-blue-theme .cm-item.cm-danger {
+    color: #ff2a2a;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+body.neon-red-blue-theme .folder-items.drag-over, 
+body.neon-red-blue-theme .tab-panel.drag-over {
+    background-color: rgba(0, 243, 255, 0.05);
+    border: 1px dashed #ff003c;
+    box-shadow: inset 0 0 10px rgba(255, 0, 60, 0.2);
+}
+body.neon-red-blue-theme .drag-indicator {
+    background-color: #ff003c;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c;
+    width: 5px;
+}
+body.neon-red-blue-theme #search-input {
+    border: 1px solid rgba(0, 102, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+body.neon-red-blue-theme #search-input:focus {
+    border-color: #ff003c;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.4), inset 0 0 10px rgba(255, 0, 60, 0.2);
+    background: rgba(255, 0, 60, 0.05);
+}

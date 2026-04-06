@@ -1,0 +1,191 @@
+/* =========================================
+   Material You Theme (Grayscale) (.material-you-theme)
+   ========================================= */
+
+body.material-you-theme {
+    background-color: #F8F9FA; /* Neutral Surface */
+    color: #1F1F1F; /* On-surface text */
+    font-family: Roboto, "Segoe UI", sans-serif;
+}
+
+body.material-you-theme header {
+    background-color: #F8F9FA; /* Blends with the background */
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Theme Selector (MD3 Tonal Button) */
+body.material-you-theme .theme-selector-wrapper {
+    background-color: #E0E0E0; /* Neutral Secondary container */
+    color: #111111; /* On-secondary container */
+    border: none;
+    border-radius: 100px; /* Fully rounded pill */
+    padding: 8px 20px;
+    box-shadow: none;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+body.material-you-theme .theme-selector-wrapper:hover {
+    background-color: #D6D6D6; /* Darker hover state */
+    /* MD3 Elevation 1 on hover */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown Menu */
+body.material-you-theme .theme-options-container,
+body.material-you-theme .overflow-options-container {
+    background: #FFFFFF; /* Pure white surface */
+    border: none;
+    border-radius: 16px;
+    /* MD3 Elevation 2 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    overflow: hidden;
+}
+
+body.material-you-theme .theme-option,
+body.material-you-theme .overflow-item {
+    color: #474747; /* On-surface variant (medium grey) */
+    border-bottom: none;
+    padding: 12px 24px;
+}
+
+body.material-you-theme .theme-option:hover {
+    background: rgba(31, 31, 31, 0.06); /* Neutral hover state overlay */
+    color: #1F1F1F;
+}
+
+body.material-you-theme .theme-option.selected {
+    background: #E0E0E0; /* Neutral Secondary container */
+    color: #111111;
+    font-weight: 500;
+}
+
+/* Tabs */
+body.material-you-theme #tabs-container {
+    gap: 8px;
+}
+
+body.material-you-theme .tab-button {
+    color: #474747;
+    border: none;
+    border-radius: 100px; /* MD3 pill tabs */
+    padding: 10px 24px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+body.material-you-theme .tab-button:hover {
+    background-color: rgba(31, 31, 31, 0.08); /* On-surface hover */
+    color: #1F1F1F;
+}
+
+body.material-you-theme .tab-button.active {
+    background-color: #E0E0E0; /* Neutral Secondary container */
+    color: #111111;
+    border: none;
+}
+
+/* Folder Groups */
+body.material-you-theme .folder-group {
+    background-color: #f5f5f5;
+    border: 1px solid #dfdfdf; /* Neutral grey outline */
+    border-radius: 24px; /* Large MD3 radius */
+    box-shadow: none;
+    padding: 24px;
+}
+
+body.material-you-theme .folder-title {
+    color: #1F1F1F;
+    border-bottom: none;
+    font-weight: 400;
+    font-size: 1.3em;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+}
+
+body.material-you-theme .folder-title::after {
+    color: #474747;
+}
+
+/* Bookmark Cards */
+body.material-you-theme .card {
+    border: none;
+    border-radius: 16px; /* Standard MD3 card radius */
+    color: #1F1F1F;
+    /* MD3 Elevation 1 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s cubic-bezier(0.2, 0, 0, 1), transform 0.2s cubic-bezier(0.2, 0, 0, 1);
+    padding: 12px 16px;
+}
+
+body.material-you-theme .card-title {
+    font-weight: 500;
+}
+
+body.material-you-theme .card:hover {
+    transform: translateY(-2px);
+    /* MD3 Elevation 2 on hover */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Context Menu */
+body.material-you-theme .context-menu {
+    background: #FFFFFF; /* Pure white surface */
+    border: none;
+    border-radius: 16px; /* MD3 standard menu radius */
+    /* MD3 Elevation 2 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    font-family: Roboto, "Segoe UI", sans-serif;
+}
+
+body.material-you-theme .cm-item {
+    color: #1F1F1F; /* On-surface text */
+    padding: 12px 24px;
+    font-weight: 400;
+}
+
+body.material-you-theme .cm-item:hover {
+    background: rgba(31, 31, 31, 0.06); /* MD3 neutral hover overlay */
+}
+
+body.material-you-theme .cm-item.cm-danger {
+    color: #B3261E; /* MD3 standard Error color */
+    border-top: 1px solid #E0E0E0; /* Neutral outline */
+}
+
+body.material-you-theme .cm-item.cm-danger:hover {
+    background: rgba(179, 38, 30, 0.08); /* Error hover overlay */
+}
+
+/* Drag Over Highlight */
+body.material-you-theme .folder-items.drag-over, 
+body.material-you-theme .tab-panel.drag-over {
+    background-color: rgba(31, 31, 31, 0.04); /* Subtle surface tint */
+    border: 2px dashed #C7C7C7; /* Neutral grey outline */
+    border-radius: 16px;
+}
+
+/* Drag Indicator */
+body.material-you-theme .drag-indicator {
+    background-color: #1F1F1F; /* Solid on-surface dark grey/black */
+    border-radius: 100px; /* Fully rounded MD3 pill shape */
+    width: 4px;
+    /* MD3 Elevation 1 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+body.material-you-theme #search-input {
+    background-color: #E0E0E0; /* Matches the theme selector */
+    border: none;
+    padding: 10px 20px;
+}
+body.material-you-theme #search-input:focus {
+    background-color: #D6D6D6;
+    box-shadow: none;
+}

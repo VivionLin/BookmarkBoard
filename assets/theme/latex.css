@@ -1,0 +1,155 @@
+/* =========================================
+   LaTeX Academic Theme (.latex-theme)
+   ========================================= */
+
+body.latex-theme {
+    background-color: #ffffff;
+    color: #000000;
+    /* Standard academic serif stack */
+    font-family: "Computer Modern", "Latin Modern Roman", "Times New Roman", Times, serif;
+    line-height: 1.6;
+}
+
+body.latex-theme header {
+    position: unset;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+}
+
+body.latex-theme .tab-button {
+    color: #555555;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 1.1em;
+    border-bottom: 1px solid transparent;
+}
+
+body.latex-theme .tab-button.active {
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+}
+
+/* Folder Groups - Section Headers */
+body.latex-theme .folder-group {
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid #000000; /* Margin line */
+    border-radius: 0;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+body.latex-theme .folder-title {
+    color: #000000;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    /* Add academic section numbering style via CSS counter if desired, or just keep clean */
+}
+
+/* Bookmark Cards - Bibliography entries */
+body.latex-theme .card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+body.latex-theme .folder-group+.card {
+    margin-left: 40px;
+}
+
+body.latex-theme .card-title {
+    font-weight: normal;
+}
+
+/* Hover effect acts like a text highlighter */
+body.latex-theme .card:hover {
+    background-color: rgba(var(--icon-color), 0.2);
+    border-color: rgba(var(--icon-color), 0.5);
+    transform: none;
+}
+
+/* Grayscale icons to keep the text the primary focus */
+body.latex-theme .card-icon {
+    filter: grayscale(100%);
+    transition: all 0.2s;
+}
+
+body.latex-theme .folder-group:hover .card-icon,
+body.latex-theme .folder-block:hover .card-icon {
+    filter: grayscale(0%);
+}
+
+/* Theme Selector */
+body.latex-theme .theme-selector-wrapper {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0; /* Sharp corners for print/academic look */
+    color: #000000;
+    font-family: inherit;
+    box-shadow: none;
+    transition: none;
+}
+
+body.latex-theme .theme-selector-wrapper:hover {
+    background-color: #f8f9fa;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+/* Dropdown Menu */
+body.latex-theme .theme-options-container,
+body.latex-theme .overflow-options-container {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0;
+    /* Very subtle shadow mimicking paper depth, avoiding modern blur */
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.05); 
+    font-family: inherit;
+}
+
+body.latex-theme .theme-option,
+body.latex-theme .overflow-item {
+    color: #000000;
+    border-bottom: 1px solid #eeeeee;
+    font-family: inherit;
+}
+
+body.latex-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.latex-theme .theme-option:hover {
+    background: #f8f9fa;
+    color: #000000;
+}
+
+/* Distinctive academic selection state */
+body.latex-theme .theme-option.selected {
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic; /* Mimics emphasis in LaTeX */
+    border-left: 3px solid #000000;
+    padding-left: 13px; /* Subtract the 3px border from the original 16px padding */
+}
+
+/* Search Input */
+body.latex-theme #search-input {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0;
+    color: #000000;
+    font-family: inherit;
+    box-shadow: none;
+}
+
+body.latex-theme #search-input:focus {
+    border-color: #000000;
+    outline: 1px solid #000000;
+    box-shadow: none;
+}

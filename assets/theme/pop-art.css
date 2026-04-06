@@ -1,0 +1,190 @@
+/* =========================================
+   Pop Art Theme (.pop-art-theme)
+   ========================================= */
+
+body.pop-art-theme {
+    /* Bright yellow base with a CSS halftone dot pattern */
+    background-color: #ffde00;
+    background-image: radial-gradient(#dcae00 20%, transparent 25%);
+    background-size: 10px 10px;
+    background-attachment: fixed;
+    
+    color: #000000;
+    /* Chunky, comic-style font stack */
+    font-family: "Comic Sans MS", "Arial Black", Impact, sans-serif;
+    text-transform: uppercase;
+}
+
+body.pop-art-theme header {
+    background-color: #0095d9; /* Bright comic blue */
+    border-bottom: 4px solid #000000; /* Thick ink outline */
+}
+
+/* Theme Selector */
+body.pop-art-theme .theme-selector-wrapper {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 0;
+    color: #000000;
+    font-weight: 900;
+    box-shadow: 3px 3px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+body.pop-art-theme .theme-selector-wrapper:hover {
+    background-color: #ed2224; /* Comic red */
+    color: #ffffff;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000000;
+}
+
+/* Dropdown Menu */
+body.pop-art-theme .theme-options-container,
+body.pop-art-theme .overflow-options-container {
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 0;
+    box-shadow: 5px 5px 0px #000000;
+}
+
+body.pop-art-theme .theme-option,
+body.pop-art-theme .overflow-item {
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 3px solid #000000;
+}
+
+body.pop-art-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.pop-art-theme .theme-option:hover {
+    background: #ffde00;
+}
+
+body.pop-art-theme .theme-option.selected {
+    background: #0095d9;
+    color: #ffffff;
+}
+
+/* Tabs */
+body.pop-art-theme .tab-button {
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-bottom: none;
+    border-radius: 0;
+    margin-right: 5px;
+    font-weight: 900;
+    box-shadow: 3px -3px 0px rgba(0,0,0,0.2);
+}
+
+body.pop-art-theme .tab-button:hover {
+    background-color: #ffde00;
+}
+
+body.pop-art-theme .tab-button.active {
+    background-color: #ed2224;
+    color: #ffffff;
+    box-shadow: 3px -3px 0px #000000; /* Hard shadow pointing up/right */
+    z-index: 2;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: -3px;
+}
+
+/* Folder Groups (Comic Panels) */
+body.pop-art-theme .folder-group {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 0;
+    box-shadow: 8px 8px 0px #000000;
+}
+
+body.pop-art-theme .folder-title {
+    color: #000000;
+    border-bottom: 4px solid #000000;
+    font-weight: 900;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+body.pop-art-theme .folder-title::after {
+    color: #ed2224;
+}
+
+/* Bookmark Cards */
+body.pop-art-theme .card {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 0;
+    color: #000000;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.1s ease;
+}
+
+body.pop-art-theme .card-title {
+    font-weight: bold;
+}
+
+/* Use :nth-child to cycle hover colors between cyan, red, and yellow */
+body.pop-art-theme .card:nth-child(3n+1):hover {
+    background-color: #0095d9;
+    color: #ffffff;
+}
+
+body.pop-art-theme .card:nth-child(3n+2):hover {
+    background-color: #ed2224;
+    color: #ffffff;
+}
+
+body.pop-art-theme .card:nth-child(3n+3):hover {
+    background-color: #ffde00;
+    color: #000000;
+}
+
+body.pop-art-theme .card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px rgb(var(--icon-color));
+}
+
+/* Context Menu & Drag Drop */
+body.pop-art-theme .context-menu {
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 0;
+    box-shadow: 5px 5px 0px #000000;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+body.pop-art-theme .cm-item { color: #000000; }
+body.pop-art-theme .cm-item:hover { background: #ffde00; }
+body.pop-art-theme .cm-item.cm-danger {
+    color: #ed2224;
+    border-top: 3px solid #000000;
+}
+body.pop-art-theme .cm-item.cm-danger:hover { color: #ffffff; background: #ed2224; }
+body.pop-art-theme .folder-items.drag-over, 
+body.pop-art-theme .tab-panel.drag-over {
+    background-color: #0095d920;
+    border: 3px dashed #0095d9;
+    border-radius: 0;
+}
+body.pop-art-theme .drag-indicator {
+    background-color: #0095d9;
+    border-radius: 0;
+    width: 8px; /* Extra thick */
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+body.pop-art-theme #search-input {
+    border: 3px solid #000000;
+    border-radius: 0;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px #000000;
+}
+body.pop-art-theme #search-input:focus {
+    background-color: #ffde00;
+    box-shadow: 5px 5px 0px #000000;
+    transform: translate(-2px, -2px);
+}

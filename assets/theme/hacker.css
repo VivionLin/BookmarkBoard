@@ -1,0 +1,192 @@
+/* =========================================
+   Hacker Theme - Monochrome Terminal Edition (.hacker-theme)
+   ========================================= */
+
+@keyframes hacker-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+body.hacker-theme {
+    background-color: #000000;
+    /* Very subtle grayscale scanline effect */
+    /* background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.03) 4px); */
+    color: #ffffff; 
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none; /* Removed the phosphor glow */
+}
+
+body.hacker-theme header {
+    background-color: #000000;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: none;
+}
+
+/* Theme Selector */
+body.hacker-theme .theme-selector-wrapper {
+    background-color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 0; 
+    color: #ffffff;
+    box-shadow: none;
+    transition: none; 
+}
+
+body.hacker-theme .theme-selector-wrapper:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dropdown Menu */
+body.hacker-theme .theme-options-container,
+body.hacker-theme .overflow-options-container {
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.2); 
+}
+
+body.hacker-theme .theme-option,
+body.hacker-theme .overflow-item {
+    color: #cccccc;
+    border-bottom: 1px dashed #666666;
+}
+
+body.hacker-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.hacker-theme .theme-option:hover,
+body.hacker-theme .theme-option.selected,
+body.hacker-theme .overflow-item:hover {
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Tabs */
+body.hacker-theme .tab-button {
+    color: #cccccc;
+    font-family: inherit;
+    border: 1px solid transparent;
+    border-radius: 0;
+    text-transform: lowercase; /* UNIX style */
+}
+
+body.hacker-theme .tab-button:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #cccccc;
+}
+
+body.hacker-theme .tab-button.active {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    font-weight: bold;
+}
+
+/* Folder Groups */
+body.hacker-theme .folder-group {
+    background-color: rgba(20, 20, 20, 0.6);
+    border: 2px dashed #ffffff52;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+body.hacker-theme .folder-title {
+    color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    font-weight: bold;
+    text-transform: lowercase; 
+}
+
+/* Terminal prompt styling for folders */
+body.hacker-theme .folder-block>.folder-title::before,
+body.hacker-theme .folder-group>.folder-title::before {
+    content: '/> ';
+    color: #cccccc;
+}
+
+body.hacker-theme .folder-block:hover>.folder-title::after,
+body.hacker-theme .folder-group:hover>.folder-title::after {
+    content: ' █';
+    color: #ffffff;
+    animation: hacker-blink 0.3s step-end infinite;
+}
+
+/* Bookmark Cards */
+body.hacker-theme .card {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.5);
+    transition: none; 
+}
+
+/* Invert colors on hover for stark contrast */
+body.hacker-theme .card:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+    background-color: #ffffff; 
+    color: #000000;
+    border-color: #ffffff;
+}
+
+/* Context Menu & Drag Drop */
+body.hacker-theme .context-menu {
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.3);
+    font-family: inherit;
+}
+body.hacker-theme .cm-item {
+    color: #ffffff;
+}
+body.hacker-theme .cm-item:hover {
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Use a dashed underline instead of red for danger items */
+body.hacker-theme .cm-item.cm-danger {
+    color: #ffffff; 
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    border-top: 1px dashed #666666;
+}
+body.hacker-theme .cm-item.cm-danger:hover {
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+body.hacker-theme .folder-items.drag-over, 
+body.hacker-theme .tab-panel.drag-over {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px dashed #ffffff;
+    border-radius: 0;
+}
+body.hacker-theme .drag-indicator {
+    background-color: #ffffff;
+    border-radius: 0;
+    width: 6px;
+}
+
+/* Search Input */
+body.hacker-theme #search-input {
+    border: 1px solid #cccccc;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+}
+body.hacker-theme #search-input:focus {
+    border-color: #ffffff;
+    background-color: #111111;
+    outline: none;
+}
+body.hacker-theme #search-input::placeholder { color: #666666; }
+body.hacker-theme #search-input:focus::placeholder { color: #cccccc; }

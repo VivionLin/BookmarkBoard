@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="welcome_title">Welcome to Bookmark Board</title>
+    <link rel="stylesheet" href="assets/css/welcome.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header class="hero">
+            <img src="assets/images/icon128.png" alt="Bookmark Board Icon">
+            <h1 data-i18n="welcome_title">Welcome to Bookmark Board</h1>
+            <p data-i18n="welcome_subtitle">Transform your cluttered bookmarks bar into a highly visual, personalized, drag-and-drop board.</p>
+        </header>
+
+        <div class="pin-wrapper">
+            <div class="pin-reminder">
+                <div class="pin-text">
+                    <span style="font-size: 1.5em;">📌</span>
+                    <span data-i18n="welcome_pin_title">Keep it one click away</span>
+                </div>
+                <div class="pin-instruction" data-i18n="welcome_pin_instruction">
+                    Click <strong>🧩 Extensions</strong> → Pin <strong>Bookmark Board</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="bento-grid">
+                
+                <div class="bento-card span-2">
+                    <h4 data-i18n="feat_drag_title">Visual Drag & Drop</h4>
+                    <p data-i18n="feat_drag_desc">Organize folders and bookmarks exactly how you want them to appear on your board.</p>
+                    <div class="visual-drag">
+                        <div class="fake-block"></div>
+                        <div class="fake-block lifted"></div>
+                        <div class="fake-block"></div>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <h4 data-i18n="feat_themes_title">10+ Themes</h4>
+                    <p data-i18n="feat_themes_desc">Change your vibe instantly.</p>
+                    <div class="visual-themes">
+                        <div class="theme-dot" style="background: #111; z-index: 5;"></div>
+                        <div class="theme-dot" style="background: #00f3ff; z-index: 4; margin-left: -10px;"></div>
+                        <div class="theme-dot" style="background: #ffde00; z-index: 3; margin-left: -10px;"></div>
+                        <div class="theme-dot" style="background: #ff003c; z-index: 2; margin-left: -10px;"></div>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <h4 data-i18n="feat_search_title">Lightning Search</h4>
+                    <p data-i18n="feat_search_desc">Find elusive bookmarks instantly without digging through nested folders.</p>
+                    <div class="visual-search">
+                        <div class="fake-search" data-i18n="search_placeholder">Search...</div>
+                    </div>
+                </div>
+
+                <div class="bento-card span-2 edits-card">
+                    <div class="edits-text">
+                        <h4 data-i18n="feat_edits_title">Easy Edits</h4>
+                        <p data-i18n="feat_edits_desc">Want to make quick edits? Just <strong>Right-Click</strong> anywhere on the board to create folders, add new bookmarks, rename, or delete old items.</p>
+                    </div>
+                    <div class="visual-edits">
+                        <div class="fake-menu">
+                            <div class="fake-menu-item" data-i18n="cm_add_folder">Add new Folder</div>
+                            <div class="fake-menu-item" data-i18n="cm_add_bookmark">Add new Bookmark</div>
+                            <div class="fake-menu-item" data-i18n="cm_rename">Rename</div>
+                            <div class="fake-menu-item danger" data-i18n="cm_delete">Delete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-content">
+                <a href="index.html" class="start-btn" data-i18n="welcome_cta">Open My Bookmark Board</a>
+                
+                <div class="support-wrapper">
+                    <span data-i18n="welcome_support">Love the extension?</span>
+                    <a href="https://buymeacoffee.com/vivionlin2" target="_blank" title="Buy me a coffee">
+                        <img src="assets/images/bmac.png" alt="Buy Me A Coffee" class="bmac-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/welcome.js"></script>
+</body>
+</html>

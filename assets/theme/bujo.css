@@ -1,0 +1,189 @@
+/* =========================================
+   Bullet Journal Theme (.bujo-theme)
+   ========================================= */
+
+body.bujo-theme {
+    background-color: #ffffff;
+    /* Dotted grid pattern */
+    background-image: radial-gradient(#d8e0e9 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+    color: #1e293b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body.bujo-theme header {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.bujo-theme .tab-button {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+body.bujo-theme .tab-button.active {
+    color: #000000;
+    border-bottom: 3px solid #000000;
+}
+
+/* Folder Groups - Hand-drawn boxes */
+body.bujo-theme .folder-group {
+    background-color: #ffffff;
+    /* Irregular border to look hand-drawn with a pen */
+    border: 2px solid #000000;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    padding: 25px;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.05); /* Slight marker shadow */
+}
+
+body.bujo-theme .folder-title {
+    color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+    font-size: 1.4em;
+    border-bottom: none;
+}
+
+/* Bookmark Cards - Journal Entries */
+body.bujo-theme .card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+/* Highlighter effect underneath text on hover */
+body.bujo-theme .card::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 40px; /* Offset past the icon */
+    width: 0;
+    height: 10px;
+    background-color: #fef08a; /* Yellow highlighter */
+    opacity: 0.6;
+    z-index: 0;
+    transition: width 0.3s ease;
+}
+
+body.bujo-theme .card:hover::after {
+    width: calc(100% - 50px);
+}
+
+body.bujo-theme .card-title {
+    position: relative;
+    z-index: 1; /* Keep text above the highlighter */
+    font-weight: 600;
+}
+
+body.bujo-theme .card:hover {
+    border-color: #94a3b8;
+    transform: translateY(-2px);
+}
+
+/* Search Input */
+body.bujo-theme #search-input {
+    border: 2px solid #000000;
+    /* Hand-drawn irregular border */
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.05);
+}
+
+body.bujo-theme #search-input:focus {
+    /* Yellow highlighter effect when typing */
+    background-color: #fef08a; 
+    border-color: #000000;
+    outline: none;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.08);
+}
+
+/* Theme Selector Wrapper */
+body.bujo-theme .theme-selector-wrapper {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    /* Reverse hand-drawn border for organic variance */
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px; 
+    color: #000000;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.05);
+}
+
+body.bujo-theme .theme-selector-wrapper:hover {
+    background-color: #f8fafc;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    border-color: #000000;
+}
+
+/* Theme Dropdown Container */
+body.bujo-theme .theme-options-container,
+body.bujo-theme .overflow-options-container {
+    background: #ffffff;
+    border: 2px solid #000000;
+    /* Sharp corners look more like a taped-in list */
+    border-radius: 2px; 
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    font-family: "Courier New", Courier, monospace;
+}
+
+body.bujo-theme .theme-option,
+body.bujo-theme .overflow-item {
+    color: #000000;
+    /* Dashed line to mimic notebook ruled lines */
+    border-bottom: 1px dashed #cbd5e1; 
+}
+
+body.bujo-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.bujo-theme .theme-option:hover {
+    background-color: #fef08a; /* Highlighter effect */
+    color: #000000;
+}
+
+body.bujo-theme .theme-option.selected {
+    background-color: #000000; /* Heavy ink fill */
+    color: #ffffff;
+    font-weight: 800;
+}
+
+body.bujo-theme .context-menu {
+    background: #ffffff;
+    border: 2px solid #000000;
+    /* Hand-drawn irregular border */
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px; 
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.05); /* Soft marker shadow */
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+body.bujo-theme .cm-item {
+    color: #000000;
+    transition: background-color 0.1s ease;
+}
+
+body.bujo-theme .cm-item:hover {
+    background-color: #fef08a; /* Yellow highlighter effect */
+    color: #000000;
+}
+
+body.bujo-theme .cm-item.cm-danger {
+    color: #ef4444; /* Red pen ink for delete */
+    /* Dashed line to mimic notebook ruled lines */
+    border-top: 2px dashed #e2e8f0; 
+}
+
+body.bujo-theme .cm-item.cm-danger:hover {
+    background-color: #fca5a5; /* Red highlighter for danger hover */
+    color: #7f1d1d; /* Darker red text */
+}

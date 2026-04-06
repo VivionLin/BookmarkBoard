@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Board</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/theme/material-you.css">
+    <link rel="stylesheet" href="assets/theme/commute-dark.css">
+    <link rel="stylesheet" href="assets/theme/frosted-glass.css">
+    <link rel="stylesheet" href="assets/theme/neon-red-blue.css">
+    <link rel="stylesheet" href="assets/theme/latex.css">
+    <link rel="stylesheet" href="assets/theme/sticky-note.css">
+    <link rel="stylesheet" href="assets/theme/pop-art.css">
+    <link rel="stylesheet" href="assets/theme/cyberpunk.css">
+    <link rel="stylesheet" href="assets/theme/hacker.css">
+    <link rel="stylesheet" href="assets/theme/blackboard.css">
+    <link rel="stylesheet" href="assets/theme/bujo.css">
+</head>
+<body>
+    <header>
+        <div id="tabs-container"></div>
+        <div class="header-controls">
+            <input type="text" id="search-input" placeholder="Search..." autocomplete="off">
+            
+            <div class="theme-selector-wrapper" id="theme-dropdown-trigger">
+                <span class="theme-icon">🎨</span>
+                <span id="current-theme-name"></span>
+                <span class="dropdown-arrow">▼</span>
+                <div class="theme-options-container" id="theme-options"></div>
+            </div>
+
+            <div class="overflow-menu-wrapper">
+                <button id="overflow-btn">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-9 12h-2v-2h2v2zm0-4h-2V6h2v4z"/>
+                    </svg>
+                </button>
+                <div class="overflow-options-container" id="overflow-options">
+                    <a href="https://chrome.google.com/webstore/detail/nepfgicdmgbjhifamefiibidmglbdjma/reviews" target="_blank" class="overflow-item" id="link-rate">
+                        <span class="menu-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/>
+                            </svg>
+                        </span>
+                        <span id="text-rate"></span>
+                    </a>
+                    <a href="https://github.com/VivionLin" target="_blank" class="overflow-item" id="link-report">
+                        <span class="menu-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/>
+                            </svg>
+                        </span>
+                        <span id="text-report"></span>
+                    </a>
+                    <a href="https://www.buymeacoffee.com/vivionlin2" target="_blank" class="overflow-item" id="link-coffee" title="Buy me a coffee">
+                        <img id="img-coffee" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 36px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="tab-panels-container"></main>
+
+    <div id="context-menu" class="context-menu">
+        <div id="cm-create-folder" class="cm-item">Add new Folder</div>
+        <div id="cm-create-bookmark" class="cm-item">Add new Bookmark</div>
+        <div id="cm-rename" class="cm-item">Rename</div>
+        <div id="cm-delete" class="cm-item cm-danger">Delete</div>
+    </div>
+
+    <div id="search-status-msg" class="search-status-pill"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

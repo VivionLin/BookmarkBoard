@@ -1,0 +1,145 @@
+/* =========================================
+   Commute Dark Theme (.commute-dark-theme)
+   ========================================= */
+
+body.commute-dark-theme {
+    background-color: #0f172a; /* Deep slate, easier on the eyes than pure black */
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body.commute-dark-theme header {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+/* Theme Selector */
+body.commute-dark-theme .theme-selector-wrapper {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    border-radius: 4px; /* Match folders/cards */
+}
+
+body.commute-dark-theme .theme-selector-wrapper:hover {
+    background-color: #334155;
+    border-color: #475569;
+}
+
+/* Dropdown Menu */
+body.commute-dark-theme .theme-options-container,
+body.commute-dark-theme .overflow-options-container {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border-radius: 4px; /* Match folders/cards */
+}
+
+body.commute-dark-theme .theme-option,
+body.commute-dark-theme .overflow-item {
+    color: #cbd5e1;
+    border-bottom: 1px solid #334155;
+}
+
+body.commute-dark-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.commute-dark-theme .theme-option:hover,
+body.commute-dark-theme .overflow-item:hover {
+    background-color: #334155;
+    color: #e2e8f0;
+}
+
+body.commute-dark-theme .theme-option.selected {
+    background-color: #0f172a;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* Tabs */
+body.commute-dark-theme .tab-button {
+    color: #94a3b8;
+}
+
+body.commute-dark-theme .tab-button:hover {
+    color: #e2e8f0;
+}
+
+body.commute-dark-theme .tab-button.active {
+    color: #38bdf8; /* Soft cyan accent */
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* Folder Groups */
+body.commute-dark-theme .folder-group {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 4px;
+}
+
+body.commute-dark-theme .folder-title {
+    color: #cbd5e1;
+}
+body.commute-dark-theme :not(.collapsed) > .folder-title {
+    border-bottom: 1px solid #334155;
+}
+
+/* Bookmark Cards */
+body.commute-dark-theme .card {
+    background-color: rgba(var(--icon-color), 0.6);
+    border: 1px solid rgba(var(--icon-color), 0.2);
+    border-radius: 4px;
+    color: #cbd5e1;
+    box-shadow: none;
+    transition: background-color 0.1s;
+}
+
+body.commute-dark-theme .card:hover {
+    box-shadow: 0 0 10px rgb(255 255 255 / 15%);
+    transform: none;
+}
+
+/* Context Menu */
+body.commute-dark-theme .context-menu {
+    background: #1e293b;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 4px; /* Match folders/cards */
+}
+body.commute-dark-theme .cm-item {
+    color: #cbd5e1;
+}
+body.commute-dark-theme .cm-item:hover {
+    background-color: #334155;
+    color: #e2e8f0;
+}
+body.commute-dark-theme .cm-item.cm-danger {
+    color: #f87171; /* Soft red for dark mode */
+    border-top: 1px solid #334155;
+}
+
+/* Drag Over Highlight */
+body.commute-dark-theme .folder-items.drag-over, 
+body.commute-dark-theme .tab-panel.drag-over {
+    background-color: rgba(56, 189, 248, 0.05); /* Soft cyan tint */
+    border: 1px dashed #38bdf8;
+    border-radius: 4px; /* Match folders/cards */
+}
+
+/* Drag Indicator */
+body.commute-dark-theme .drag-indicator {
+    background-color: #38bdf8;
+}
+
+/* Search Input */
+body.commute-dark-theme #search-input {
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    background-color: #1e293b;
+    border-radius: 4px; /* Match folders/cards */
+}
+body.commute-dark-theme #search-input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}

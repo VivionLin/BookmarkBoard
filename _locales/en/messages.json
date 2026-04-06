@@ -1,0 +1,60 @@
+{
+  "extension_name": { "message": "Bookmark Board" },
+  "extension_description": { "message": "View and organize your bookmarks on a highly visual, drag-and-drop board." },
+
+  "search_placeholder": { "message": "Search..." },
+  "search_active_msg": { "message": "Editing and reordering disabled during search" },
+
+  "theme_material": { "message": "Light" },
+  "theme_commute_dark": { "message": "Dark" },
+  "theme_frosted_glass": { "message": "Frosted Glass" },
+  "theme_neon": { "message": "Neon Live" },
+  "theme_latex": { "message": "LaTeX" },
+  "theme_sticky_note": { "message": "Sticky Note" },
+  "theme_pop_art": { "message": "Pop Art" },
+  "theme_cyberpunk": { "message": "Cyberpunk" },
+  "theme_hacker": { "message": "Terminal" },
+  "theme_blackboard": { "message": "Blackboard" },
+  "theme_bujo": { "message": "Bujo" },
+
+  "overflow_btn_title": { "message": "Feedback & Support" },
+  "overflow_rate_title": { "message": "Recommend this extension" },
+  "overflow_report_title": { "message": "Report a bug" },
+
+  "cm_add_folder": { "message": "Add new Folder" },
+  "cm_add_bookmark": { "message": "Add new Bookmark" },
+  "cm_delete": { "message": "Delete" },
+  "cm_rename": { "message": "Rename" },
+
+  "prompt_folder_name": { "message": "Enter new folder name:" },
+  "prompt_bookmark_title": { "message": "Enter bookmark title:" },
+  "prompt_bookmark_url": { "message": "Enter bookmark URL:" },
+  "prompt_rename_folder": { "message": "Enter new folder name:" },
+  "prompt_rename_bookmark": { "message": "Enter new bookmark title:" },
+  "delete_confirm": {
+    "message": "Are you sure you want to delete \"$TITLE$\"?",
+    "placeholders": {
+      "title": { "content": "$1" }
+    }
+  },
+
+  "welcome_title": { "message": "Welcome to Bookmark Board" },
+  "welcome_subtitle": { "message": "Transform your cluttered bookmarks bar into a highly visual, personalized, drag-and-drop board." },
+  "welcome_pin_title": { "message": "Keep it one click away" },
+  "welcome_pin_instruction": { "message": "Click <strong>🧩 Extensions</strong> → Pin <strong>Bookmark Board</strong>" },
+  
+  "feat_drag_title": { "message": "Visual Drag & Drop" },
+  "feat_drag_desc": { "message": "Organize folders and bookmarks exactly how you want them to appear on your board." },
+  
+  "feat_themes_title": { "message": "10+ Themes" },
+  "feat_themes_desc": { "message": "Change your vibe instantly." },
+  
+  "feat_search_title": { "message": "Lightning Search" },
+  "feat_search_desc": { "message": "Find elusive bookmarks instantly without digging through nested folders." },
+  
+  "feat_edits_title": { "message": "Easy Edits" },
+  "feat_edits_desc": { "message": "Want to make quick edits? Just <strong>Right-Click</strong> anywhere on the board to create folders, add new bookmarks, rename, or delete items." },
+  
+  "welcome_cta": { "message": "Open My Bookmark Board" },
+  "welcome_support": { "message": "Love the extension?" }
+}

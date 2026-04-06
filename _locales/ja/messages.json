@@ -1,0 +1,59 @@
+{
+  "extension_name": { "message": "ブックマークボード" },
+  "extension_description": { "message": "視覚的なドラッグ＆ドロップのボードでブックマークを表示・整理します。" },
+
+  "search_placeholder": { "message": "検索..." },
+  "search_active_msg": { "message": "検索中は編集と並べ替えが無効になります" },
+
+  "theme_material": { "message": "シンプル" },
+  "theme_commute_dark": { "message": "よる" },
+  "theme_frosted_glass": { "message": "すりガラス" },
+  "theme_neon": { "message": "ネオン" },
+  "theme_latex": { "message": "学術誌" },
+  "theme_sticky_note": { "message": "付箋" },
+  "theme_pop_art": { "message": "ポスター" },
+  "theme_cyberpunk": { "message": "サイバーパンク" },
+  "theme_hacker": { "message": "ハッカー" },
+  "theme_blackboard": { "message": "黒板" },
+  "theme_bujo": { "message": "手帳" },
+
+  "overflow_btn_title": { "message": "フィードバックとサポート" },
+  "overflow_rate_title": { "message": "この拡張機能をおすすめする" },
+  "overflow_report_title": { "message": "バグを報告する" },
+
+  "cm_add_folder": { "message": "新しいフォルダを追加" },
+  "cm_add_bookmark": { "message": "新しいブックマークを追加" },
+  "cm_rename": { "message": "名前を変更" },
+  "cm_delete": { "message": "削除" },
+  "prompt_folder_name": { "message": "新しいフォルダ名を入力してください:" },
+  "prompt_bookmark_title": { "message": "ブックマークのタイトルを入力してください:" },
+  "prompt_bookmark_url": { "message": "ブックマークのURLを入力してください:" },
+  "prompt_rename_folder": { "message": "新しいフォルダ名を入力してください:" },
+  "prompt_rename_bookmark": { "message": "新しいブックマーク名を入力してください:" },
+  "delete_confirm": {
+    "message": "「$TITLE$」を削除してもよろしいですか？",
+    "placeholders": {
+      "title": { "content": "$1" }
+    }
+  },
+
+  "welcome_title": { "message": "ブックマークボードへようこそ" },
+  "welcome_subtitle": { "message": "散らかったブックマークバーを、視覚的でパーソナライズされたドラッグ＆ドロップのボードに変身させます。" },
+  "welcome_pin_title": { "message": "ワンクリックでアクセス" },
+  "welcome_pin_instruction": { "message": "<strong>🧩 拡張機能</strong> をクリック → <strong>ブックマークボード</strong> をピン留め" },
+  
+  "feat_drag_title": { "message": "視覚的なドラッグ＆ドロップ" },
+  "feat_drag_desc": { "message": "フォルダやブックマークを整理して、ボード上で思い通りに配置できます。" },
+  
+  "feat_themes_title": { "message": "10種類以上のテーマ" },
+  "feat_themes_desc": { "message": "気分に合わせて雰囲気を一瞬で変更できます。" },
+  
+  "feat_search_title": { "message": "爆速検索" },
+  "feat_search_desc": { "message": "深いフォルダを探し回ることなく、見つけにくいブックマークをすぐに見つけ出します。" },
+  
+  "feat_edits_title": { "message": "簡単な編集" },
+  "feat_edits_desc": { "message": "簡単に編集したいですか？ボード上の任意の場所を<strong>右クリック</strong>するだけで、フォルダの作成、新しいブックマークの追加、名前の変更、またはアイテムの削除ができます。" },
+  
+  "welcome_cta": { "message": "ブックマークボードを開く" },
+  "welcome_support": { "message": "この拡張機能を気に入りましたか？" }
+}

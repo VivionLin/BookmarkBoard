@@ -1,0 +1,271 @@
+/* =========================================
+   Cyberpunk Theme - Overdrive Edition (.cyberpunk-theme)
+   ========================================= */
+
+/* Animations */
+@keyframes cp-glitch {
+    0% { transform: translate(0) }
+    20% { transform: translate(-1px, 1px) }
+    40% { transform: translate(-1px, -1px) }
+    60% { transform: translate(1px, 1px) }
+    80% { transform: translate(1px, -1px) }
+    100% { transform: translate(0) }
+}
+
+@keyframes cp-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0.8; text-shadow: none; }
+}
+
+body.cyberpunk-theme {
+    background-color: #050508;
+    /* Combine an industrial grid with subtle scanlines */
+    background-image: 
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 240, 255, 0.05) 2px, rgba(0, 240, 255, 0.05) 4px),
+        linear-gradient(rgba(255, 0, 60, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 0, 60, 0.1) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+    background-position: center;
+    
+    color: #00f0ff; /* Bright Cyan */
+    font-family: "Courier New", "Segoe UI", Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body.cyberpunk-theme header {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid #ff003c; /* Hot Pink */
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.5);
+}
+
+/* Theme Selector */
+body.cyberpunk-theme .theme-selector-wrapper {
+    background-color: #fcee0a; /* Cyberpunk Yellow */
+    color: #000000;
+    border: 2px solid #ff003c;
+    border-radius: 0;
+    font-weight: 900;
+    transition: none;
+    animation: cp-flicker 4s infinite;
+}
+
+body.cyberpunk-theme .theme-selector-wrapper:hover {
+    background-color: #00f0ff;
+}
+
+/* Dropdown Menu */
+body.cyberpunk-theme .theme-options-container,
+body.cyberpunk-theme .overflow-options-container {
+    background: #000000;
+    border: 2px solid #00f0ff;
+    border-radius: 0;
+    box-shadow: 6px 6px 0px rgba(0, 240, 255, 0.2);
+}
+
+body.cyberpunk-theme .theme-option,
+body.cyberpunk-theme .overflow-item {
+    color: #fcee0a;
+    border-bottom: 1px solid rgba(252, 238, 10, 0.2);
+}
+
+body.cyberpunk-theme .theme-option:last-child {
+    border-bottom: none;
+}
+
+body.cyberpunk-theme .theme-option:hover,
+body.cyberpunk-theme .theme-option.selected,
+body.cyberpunk-theme .overflow-item:hover {
+    background: #ff003c;
+    color: #ffffff;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+body.cyberpunk-theme .theme-option.selected::before {
+    content: '> ';
+    color: #fcee0a;
+}
+
+/* Tabs */
+body.cyberpunk-theme .tab-button {
+    color: #00f0ff;
+    border: none;
+    border-radius: 0;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: transparent;
+    border-bottom: 3px solid transparent;
+}
+
+body.cyberpunk-theme .tab-button::before { content: '[ '; opacity: 0.3; transition: 0.2s; }
+body.cyberpunk-theme .tab-button::after { content: ' ]'; opacity: 0.3; transition: 0.2s; }
+
+body.cyberpunk-theme .tab-button:hover::before,
+body.cyberpunk-theme .tab-button:hover::after {
+    opacity: 1;
+    color: #fcee0a;
+}
+
+body.cyberpunk-theme .tab-button:hover {
+    color: #fcee0a;
+    background: rgba(252, 238, 10, 0.05);
+}
+
+body.cyberpunk-theme .tab-button.active {
+    color: #000000;
+    background-image: repeating-linear-gradient(45deg, #fcee0a, #fcee0a 10px, #e5d609 10px, #e5d609 20px);
+    border-bottom: 3px solid #ff003c;
+    box-shadow: 0 -5px 15px rgba(252, 238, 10, 0.2);
+    text-shadow: none;
+}
+body.cyberpunk-theme .tab-button.active::before,
+body.cyberpunk-theme .tab-button.active::after { display: none; }
+
+/* Folder Groups */
+body.cyberpunk-theme .folder-group {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    border: 1px solid #ff003c;
+    border-left: 4px solid #ff003c;
+    border-radius: 0;
+    box-shadow: inset 0 0 20px rgba(255, 0, 60, 0.15);
+    position: relative;
+}
+
+/* High-tech label injected into the top right of folders */
+body.cyberpunk-theme .folder-group::before {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: #000000;
+    color: #00f0ff;
+    font-size: 0.65em;
+    font-weight: bold;
+    padding: 2px 8px;
+    border: 1px solid #00f0ff;
+}
+body.cyberpunk-theme .folder-group:not(.collapsed)::before,
+body.cyberpunk-theme .folder-group:hover::before {
+    content: 'NET.DIR';
+}
+
+body.cyberpunk-theme .folder-title {
+    color: #fcee0a;
+    border-bottom: 2px dashed rgba(0, 240, 255, 0.5);
+    font-weight: 900;
+    text-shadow: 2px 2px 0px #ff003c;
+    letter-spacing: 2px;
+}
+
+body.cyberpunk-theme .folder-title::before { content: '░ '; color: #00f0ff; }
+body.cyberpunk-theme .folder-title::after { color: #00f0ff; }
+
+/* Bookmark Cards */
+body.cyberpunk-theme .card {
+    background-color: #000000;
+    border: 1px solid #00f0ff;
+    border-radius: 0;
+    color: #ffffff;
+    /* Cyberpunk chamfered corner effect */
+    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+    transition: none;
+    position: relative;
+}
+
+/* Inner decorative accent for cards */
+body.cyberpunk-theme .card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 4px;
+    background-color: #ff003c;
+}
+
+body.cyberpunk-theme .card-title {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body.cyberpunk-theme .card:hover {
+    background-color: #fcee0a;
+    color: #000000;
+    border-color: #fcee0a;
+    filter: drop-shadow(4px 4px 0px #ff003c);
+    animation: cp-glitch 0.2s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+body.cyberpunk-theme .card:hover::after { background-color: #000000; }
+
+/* Context Menu & Drag Drop */
+body.cyberpunk-theme .context-menu {
+    background: #000000;
+    border: 1px solid #00f0ff;
+    border-radius: 0;
+    box-shadow: 6px 6px 0px rgba(255, 0, 60, 0.6);
+    font-family: inherit;
+    text-transform: uppercase;
+}
+body.cyberpunk-theme .cm-item {
+    color: #fcee0a;
+}
+body.cyberpunk-theme .cm-item::before {
+    content: '[-] ';
+    color: #ff003c;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+body.cyberpunk-theme .cm-item:hover {
+    background: #ff003c;
+    color: #ffffff;
+    font-weight: bold;
+}
+body.cyberpunk-theme .cm-item:hover::before { color: #ffffff; opacity: 1; content: '[+] ';}
+
+body.cyberpunk-theme .cm-item.cm-danger {
+    color: #ff003c;
+    border-top: 1px dashed rgba(0, 240, 255, 0.5);
+}
+body.cyberpunk-theme .cm-item.cm-danger::before { content: '[!] '; color: #fcee0a; }
+
+body.cyberpunk-theme .cm-item.cm-danger:hover {
+    color: #000000;
+    background-image: repeating-linear-gradient(45deg, #ff003c, #ff003c 10px, #cc0030 10px, #cc0030 20px);
+}
+
+body.cyberpunk-theme .folder-items.drag-over, 
+body.cyberpunk-theme .tab-panel.drag-over {
+    background-color: rgba(252, 238, 10, 0.05);
+    border: 2px dashed #fcee0a;
+    border-radius: 0;
+}
+body.cyberpunk-theme .drag-indicator {
+    background-image: repeating-linear-gradient(45deg, #fcee0a, #fcee0a 5px, #000000 5px, #000000 10px);
+    border: 1px solid #ff003c;
+    border-radius: 0;
+    box-shadow: 0 0 10px #ff003c;
+    width: 8px;
+}
+
+body.cyberpunk-theme #search-input {
+    border: 1px solid #00f0ff;
+    border-radius: 0;
+    background-color: rgba(0, 240, 255, 0.05);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00f0ff;
+}
+body.cyberpunk-theme #search-input:focus {
+    border-color: #fcee0a;
+    box-shadow: 0 0 15px rgba(252, 238, 10, 0.4);
+    outline: 2px solid #ff003c;
+    background-color: rgba(252, 238, 10, 0.1);
+    color: #fcee0a;
+}
+body.cyberpunk-theme #search-input::placeholder {
+    color: rgba(0, 240, 255, 0.4);
+}
