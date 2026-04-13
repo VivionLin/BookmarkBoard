@@ -193,22 +193,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const domain = getDomain(bookmark.url);
             const icon = document.createElement('img');
             icon.className = 'card-icon';
-
             icon.crossOrigin = "Anonymous";
-
-            icon.onerror = function() {
-                if (!this.dataset.fallbackAttempted) {
-                    this.dataset.fallbackAttempted = 'true';
-                    this.src = `/_favicon/?pageUrl=${encodeURIComponent(bookmark.url)}&size=32`;
-                }
-            };
 
             icon.onload = function() {
                 const rgb = getAverageRGB(icon);
                 card.style.setProperty('--icon-color', `${rgb.r}, ${rgb.g}, ${rgb.b}`);
             };
 
-            icon.src = `https://icon.horse/icon/${domain}`;
+            const faviconUrl = new URL(chrome.runtime.getURL("/_favicon/"));
+            faviconUrl.searchParams.set("pageUrl", bookmark.url);
+            faviconUrl.searchParams.set("size", "32");
+            icon.src = faviconUrl.toString();
 
             const title = document.createElement('div');
             title.className = 'card-title';
